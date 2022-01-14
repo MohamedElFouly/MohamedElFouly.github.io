@@ -3,9 +3,14 @@
   left: 0px;
   right: 0px;
   float: none;
-  width: 100%;
 }
 
+.bannercenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 42%;
+}
 body {
   margin: 0;
   box-sizing: border-box;
@@ -44,7 +49,7 @@ h1 {
   width: 250px;
   float: right;
   background-color: #A2B964;
-  
+
 }
 .movie-bar-left-img {
   float: left;
@@ -65,7 +70,7 @@ h1 {
   margin: 3%;
 }
 .reviewcard {
-  display: inline-block; 
+  display: inline-block;
 
 }
 
