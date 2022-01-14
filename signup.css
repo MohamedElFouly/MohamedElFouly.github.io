@@ -1,0 +1,49 @@
+form {
+    display: table;
+    width: auto;
+}
+
+p {
+    display: table-row;
+}
+
+label {
+    text-align: left;
+    display: table-cell;
+}
+
+.gender {
+    text-align: left;
+    display: inline;
+}
+
+span {
+	color: #FF3399;
+}
+
+input {
+    display: table-cell;
+}
+
+fieldset {
+    background-color: #CCCCFF;
+	border-radius: 12px;
+}
+
+legend {
+    background-color: white;
+    border-style: outset;
+}
+
+input[type=submit] {
+    padding: 5px 15px;
+    background-color: #FF9999;
+    border: 0 none;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.seekGender {
+    display: inline;
+}
