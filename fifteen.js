@@ -48,7 +48,7 @@ $(document).ready(function(){
         });
 
         $(this).hover(function () {
-            if (possiableMove($(this))) {
+            if (possibleMove($(this))) {
                 $(this).addClass("movablepiece");
             }
         },
@@ -56,7 +56,7 @@ $(document).ready(function(){
             $(this).removeClass("movablepiece");
         });
 
-        var possiableMove = function(object){
+        var possibleMove = function(object){
             var currentLeft = object.position().left;
             var currentTop = object.position().top;
 
@@ -81,39 +81,39 @@ $(document).ready(function(){
     });
 
     var shuffle = function (){
-        var itemArr = [];
+        var itemArray = [];
 
         // above the blank square
         if (emptyRow - tileSize >= 0) {
             var rowIndex = (emptyRow - tileSize) / tileSize;
-            itemArr.push("#square_" + rowIndex + "_" + (emptyColumn / tileSize));
+            itemArray.push("#square_" + rowIndex + "_" + (emptyColumn / tileSize));
         }
 
         // below the blank square
         if (emptyRow + tileSize < tileSize * PUZZLE_NUMBER) {
             var rowIndex = (emptyRow + tileSize) / tileSize;
-            itemArr.push("#square_" + rowIndex + "_" + (emptyColumn / tileSize));
+            itemArray.push("#square_" + rowIndex + "_" + (emptyColumn / tileSize));
         }
 
         // left of the blank square
         if (emptyColumn - tileSize >= 0) {
             var columnIndex = (emptyColumn - tileSize) / tileSize;
-            itemArr.push("#square_" + (emptyRow / tileSize) + "_" + columnIndex);
+            itemArray.push("#square_" + (emptyRow / tileSize) + "_" + columnIndex);
         }
 
         // right of the blank square
         if (emptyColumn + tileSize < tileSize * PUZZLE_NUMBER) {
             var columnIndex = (emptyColumn + tileSize) / tileSize;
-            itemArr.push("#square_" + (emptyRow / tileSize) + "_" + columnIndex);
+            itemArray.push("#square_" + (emptyRow / tileSize) + "_" + columnIndex);
         }
 
         // random select neighbor of the blank square
-        var randomIndex = Math.floor(Math.random() * itemArr.size());
-        var tLeft = $(itemArr[randomIndex]).position().left;
-        var tTop = $(itemArr[randomIndex]).position().top;
+        var randomIndex = Math.floor(Math.random() * itemArray.size());
+        var tLeft = $(itemArray[randomIndex]).position().left;
+        var tTop = $(itemArray[randomIndex]).position().top;
 
         // move it to the blank square position
-        $(itemArr[randomIndex]).css({"left": emptyRow, "top": emptyColumn});
+        $(itemArray[randomIndex]).css({"left": emptyRow, "top": emptyColumn});
 
         // keep tracking the blank square
         emptyColumn = tTop;
