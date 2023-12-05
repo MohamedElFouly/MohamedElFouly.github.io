@@ -1,0 +1,67 @@
+/* Apply styles to the header */
+header {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Apply styles to the main content */
+main {
+    padding: 20px;
+}
+
+/* Apply styles to sections and articles */
+section {
+    margin-bottom: 20px;
+}
+
+article {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Apply styles to headings */
+h1, h2, h3 {
+    color: #0073e6;
+}
+h4{
+    color: #ffffff;
+}
+
+/* Apply styles to lists */
+ul {
+    list-style-type: disc;
+}
+
+/* Apply styles to the footer */
+footer {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    /* Styles for the hamburger icon */
+}
+
+/* Styles for hiding the mobile menu initially */
+.mobile-menu {
+    display: none;
+    /* Other styling for your mobile menu */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show the hamburger icon */
+    }
+
+    /* Show the mobile menu when the hamburger icon is clicked */
+    .menu-toggle.active + .mobile-menu {
+        display: block;
+    }
+}

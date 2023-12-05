@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Resume</title>
+    <link rel="stylesheet" type="text/css" href="Profile.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery (required for Bootstrap JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h4>Software Engineer/Python Developer</h4>
+      <p>Results-driven software engineer with over 6 years of proven track record in developing and deploying web-based and desktop applications using the complete Software Development Life Cycle. Demonstrated excellence in algorithm design and analysis, achieving up to 30x performance increase. Proficient in Python, Java, Go, SQL, Data Structures, and Object Oriented Programming. Experienced in Agile/Scrum and design patterns with a strong understanding of microservices.</p>
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav class="mobile-menu">
+        <!-- Your menu items here -->
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Professional Experience</h2>
+        <article>
+          <h3>APPLE, NC, United States</h3>
+          <p>Senior Software Engineer/Python Developer</p>
+          <p>01/2023 - 07/2023</p>
+          <ul>
+            <li>Implemented, deployed, and maintained Python-based and Go-based vulnerability scanners</li>
+            <li>Utilized Docker containers to streamline and standardize scanner deployments, ensuring consistency and portability across environments</li>
+            <li>Reduced vulnerability scanners runtime by more than 30x, resulting in much faster threat detections</li>
+            <li>Reduced scanner failure response time by over 7x, resulting in rapid mitigation of vulnerabilities</li>
+            <li>Enhanced the scanner environment on virtual machines (VMs), reducing scanner failures by 95%</li>
+            <li>Drastically improved scanner reliability by reducing false positives (FPs) to just 1% by using specialized ReGex expressions</li>
+            <li>Designed and implemented a Go-based attribution tool to act as the source of truth for vulnerability remediation</li>
+            <li>Enhanced operational efficiency by implementing a streamlined ETL workflow with Apache Airflow</li>
+          </ul>
+          <p>Technologies: Python, Golang, PostgreSQL, REST API, RHEL, AWS, Apache Airflow, Shell Scripting, Ansible, Docker</p>
+        </article>
+        <article>
+          <h3>CYBERSAFE SOLUTIONS, MD, United States</h3>
+          <p>Senior Software Engineer/Python Developer</p>
+          <p>08/2022 - 11/2022</p>
+          <ul>
+            <li>Implemented, deployed, and maintained Python-based and Go-based vulnerability scanners</li>
+            <li>Integrated the APIs of external vulnerability management tools into a Django-based system, achieving a 100% match in detections</li>
+            <li>Achieved 100% visibility in reporting environments by collaborating with SOC on configuration and updates</li>
+            <li>Spearheaded a system overhaul, adhering to OOP principles and design patterns, yielding a highly maintainable codebase</li>
+            <li>Gathered requirements and completed analysis, design, development, testing, and implementation of data gathering, analytics, and visualization needs</li>
+            <li>Identified data sources and built necessary queries and views to develop reports and dashboards</li>
+            <li>Monitored, investigated, and troubleshot data integrity and data quality between source systems (threat feeds, security events, security alerts, vulnerability feeds, etc.) and Aegis</li>
+            <li>Supported ongoing data quality assessment efforts by developing queries that measure data against standards and thresholds</li>
+            <li>Tuned performance of existing reports and analytics solutions</li>
+            <li>Developed and managed reporting standards based on best practices while conforming to existing internal security guidelines</li>
+            <li>Ensured proper configuration of production and non-production reporting environments, coordinated with the SOC to manage updates and patches to keep platforms current</li>
+          </ul>
+          <p>Technologies: Python, Django, MySQL, REST API, Shell Scripting</p>
+        </article>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <article>
+          <h3>Amazon Web Services (AWS) Certified Solutions Architect Associate</h3>
+        </article>
+        <article>
+          <h3>Master of Science in Computer Science</h3>
+          <p>Maharishi International University, IA, United States</p>
+        </article>
+        <article>
+          <h3>Bachelor of Science in Information Technology and Computing</h3>
+          <p>Arab Open University, Cairo, Egypt</p>
+        </article>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>Programming Languages: Python, Java, JavaScript, C#, C++, Golang, MATLAB</li>
+          <li>Web: Spring, React, HTML, CSS, jQuery, Microservices, REST API, JSON, GraphQL</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Projects</h2>
+        <div id="project-carousel" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="project1.jpg" alt="Project 1">
+			  <a href="https://gist.github.com/MohamedElFouly/4f114032530fa9d938e1ff5582f3623c">Collaborative-Filtering-movies-py-v1.ipynb</a>
+              <!-- Other project details -->
+            </div>
+            <div class="carousel-item">
+              <img src="project2.jpg" alt="Project 2">
+			  <a href="https://gist.github.com/MohamedElFouly/f5a1c3bd85e83ceaef04c2b1bffc3141">Segmenting and Clustering Neighborhoods in New York City</a>
+              <!-- Other project details -->
+            </div>
+            <!-- Add more carousel items -->
+          </div>
+          <!-- Controls -->
+          <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Contact Information: mail@gmail.com | (111) 222-3333 | Disney Land</p>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        menuToggle.addEventListener('click', function() {
+          this.classList.toggle('active');
+        });
+      });
+    </script>
+  </body>
+</html>
